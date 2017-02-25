@@ -1,8 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
+## creates a cache-able matrix for caching its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
   
@@ -21,8 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## calculates and caches the inverse of the matrix parameter
 cacheSolve <- function(x, ...) {
   if(!is.matrix(x)) {
     stop("Argument must be a matrix")
